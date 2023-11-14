@@ -1,9 +1,9 @@
 ---
-title: Hello Worlds
+title: Hello World
 layout: "base.njk"
 ---
 
-Hello Jamstack fam!!
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.
 
 <ul>
 {% for post in collections.posts %}
