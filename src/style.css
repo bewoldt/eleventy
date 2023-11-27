@@ -4,10 +4,6 @@
   --ff-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace;
   --ff-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
-  --ff-neo-grotesque: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
-    sans-serif;
-  --ff-rounded-sans: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa, Manjari,
-    "Arial Rounded MT", "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif;
 
   --font-body: var(--ff-system);
   --ff-heading: var(--ff-system);
@@ -40,26 +36,23 @@
   box-sizing: border-box;
 }
 
-/* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
+html {
   line-height: 1.5;
 }
+body {
+  min-height: 100vh;
+}
 
-/* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
 h3,
@@ -70,7 +63,6 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
 h1,
 h2,
 h3,
@@ -78,20 +70,17 @@ h4 {
   text-wrap: balance;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -99,12 +88,10 @@ select {
   font: inherit;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
 }
@@ -121,7 +108,7 @@ body {
   font-weight: normal;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 45rem;
+  max-width: 47rem;
   padding: 1rem;
 }
 
@@ -169,7 +156,7 @@ table td {
 /* Blockquotes */
 blockquote {
   border-left: 5px solid #333;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 0.5rem 1rem;
   background-color: #f5f5f5;
   p:not(:first-child) {
